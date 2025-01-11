@@ -3,6 +3,9 @@ import Chart from './Chart';
 import DonutChart from './ChartTwo';
 import { RiFileCopy2Line } from "react-icons/ri";
 import { PiPaypalLogoDuotone } from "react-icons/pi";
+import clickUp from '../../assets/Icons/clickup-seeklogo.png'
+import airTable from '../../assets/Icons/airtable.png'
+import jotForm from '../../assets/Icons/jot.png'
 
 const Banner = () => {
     return (
@@ -94,6 +97,19 @@ const Banner = () => {
             </div>
             </div>
             {/*  */}
+            </div>
+
+            <p className='divider w-10/12 mx-auto '></p>
+            <div className='flex justify-between items-center gap-20 py-10 w-10/12 mx-auto'>
+                <div >
+                    <h1 className="text-2xl font-bold">Our Partners Companies</h1>
+                    <p className="text-lg text-gray-500 font-semibold">Our comprehensive suite of cloud-based solutions is designed to streamline your operations</p>
+                </div>
+           
+               <img  className='w-72 '  src={clickUp} alt="" />
+                <img  className='w-72 ' src={airTable} alt="" />
+                <img className='w-72 '  src={jotForm} alt="" />
+          
             </div>
         </div>
     );
