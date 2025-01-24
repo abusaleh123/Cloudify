@@ -47,7 +47,7 @@ const Transforming = () => {
             </p>
             <button className="btn border-none mt-6 px-10 bg-white hover:bg-white text-lg">Explore Our Services</button>
 
-            <div className='mt-48 w-10/12 space-y-9'>
+            <div className='mt-32 w-10/12 space-y-9'>
                 {/* Card */}
                 <div className='bg-white py-8 px-6 rounded-lg flex gap-6 items-center'>
                <img className='w' src={logo1} alt="" />
@@ -59,7 +59,7 @@ const Transforming = () => {
                <p className="text-2xl font-bold w-3/4">Software-as-a-Service (SaaS) Applications</p>
                 </div>
                 {/* Card */}
-                <div className='bg-white py-4 px-6 rounded-lg flex gap-6 items-center'>
+                <div className='bg-white py-8 px-6 rounded-lg flex gap-6 items-center'>
                <img className='w-8' src={logo3} alt="" />
                <p className="text-2xl font-bold w-3/4">Data Management and Analytics</p>
                 </div>
