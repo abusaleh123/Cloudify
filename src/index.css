@@ -5,7 +5,9 @@
 
 
 
-
+body{
+  font-family: "Wix Madefor Display", serif;
+}
 .active{
   color: #7051F3;
   

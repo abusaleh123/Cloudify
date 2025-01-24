@@ -12,11 +12,11 @@ const Banner = () => {
         <div className='bg-[#F1EEFE] '>
             <div className='w-10/12 mx-auto py-16' >
             {/*  */}
-            <div className='flex '>
+            <div className='lg:flex '>
             <div className=''>
-            <h1 className="lg:text-8xl md:text-5xl text-4xl  font-semibold mb-6">
-                Ascend Your Enterprise with
-                <br />
+            <h1 className="lg:text-8xl tracking-wide md:text-5xl text-4xl  font-semibold mb-6">
+                Ascend Your Enterprise with  <br />
+            
                 <span className='text-[#7051F3]'>SaaS Mastery</span>
             </h1>
             <p className="text-gray-400 w-3/4 text-lg">
@@ -27,7 +27,7 @@ const Banner = () => {
                         <button className='btn btn-ghost  border-2 border-[#FE7646] text-[#FE7646] text-lg'>Start Free Trial</button>
                     </div>
 
-
+TODO
 
 
             </div>
