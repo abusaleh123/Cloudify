@@ -15,7 +15,7 @@ const Features = () => {
 
                 {/* Text */}
                 <div className="text-center flex justify-center items-center flex-col" >
-                <h1 className="text-2xl rounded-md font-medium text-[#8B71FB] border-2 border-[#8B71FB] w-fit py-2 px-8"> Why Choose Us</h1>
+                <h1 className="text-2xl rounded-md font-medium text-[#8B71FB] border-2 border-[#8B71FB] w-fit py-2 px-8"> Why Choose ClodifyPro</h1>
 
                 <h1 className="text-6xl my-10 font-bold ">Innovative Features for Business Success</h1>
                 </div>
