@@ -9,13 +9,15 @@ const Transforming = () => {
   return (
     <div className="bg-[#7051F3]  py-28">
       <div className="w-10/12 mx-auto">
-        <div className="flex gap-10">
+        <div className="flex flex-col md:flex-row gap-10">
           <div>
-            <p className="text-3xl w-fit mb-6 py-2 px-4 rounded-lg text-white border">Our Cloud Solutions</p>
-            <h1 className="text-5xl font-bold leading-tight text-white">
+           <div className='flex justify-center flex-col items-center md:items-start'>
+           <p className="text-3xl w-fit mb-6 py-2 px-4 rounded-lg   text-white border">Our Cloud Solutions</p>
+            <h1 className="text-5xl font-bold text-center md:text-start leading-tight text-white">
               Transforming Your Business Operations with Innovative Cloud
               Solutions
             </h1>
+           </div>
             <div 
   style={{
     background: 'linear-gradient(to bottom, #8d73fc, #866bfa, #8063f8, #795bf5, #7253f3)',
@@ -47,7 +49,7 @@ const Transforming = () => {
             </p>
             <button className="btn border-none mt-6 px-10 bg-white hover:bg-white text-lg">Explore Our Services</button>
 
-            <div className='mt-32 w-10/12 space-y-9'>
+            <div className='md:mt-32 mt-10  md:w-10/12 space-y-9'>
                 {/* Card */}
                 <div className='bg-white py-8 px-6 rounded-lg flex gap-6 items-center'>
                <img className='w' src={logo1} alt="" />

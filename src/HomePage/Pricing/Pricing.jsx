@@ -2,7 +2,7 @@ import { FaCheck } from "react-icons/fa6";
 
 const Pricing = () => {
     return (
-        <div className="w-10/12 mx-auto">
+        <div className="w-10/12 mx-auto py-20">
             <div>
                  {/* Text */}
                  <div className="text-center flex justify-center items-center flex-col" >

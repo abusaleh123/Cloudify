@@ -159,7 +159,7 @@ const Navbar = () => {
          
         
               <Link to={'/register'}  className="btn btn-ghost text-black  w-20 md:w-fit lg:text-xl text-sm font-bold">Login</Link>
-              <Link to={'/login'}  className="btn bg-[#7051F3] btn-ghost text-whiet md:text-lg text-sm w-14 md:w-fit font-semibold">Get Started</Link>
+              <Link to={'/login'}  className="btn bg-[#7051F3] btn-ghost text-white  md:text-lg text-sm  md:w-fit font-semibold">Get Started</Link>
           
         
         </div>

@@ -1,87 +1,175 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
+import React, { useRef } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
+import image from '../../assets/Images/5c81b8f8-190c-4369-b2a8-188acfc11b11.jpeg'
+import { RiDoubleQuotesR } from "react-icons/ri";
+import { MdOutlineArrowRightAlt } from "react-icons/md";
+import { LuMoveLeft } from "react-icons/lu";
 
 
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
 
-const Testimonial = () => {
-    return (
-        <div className="w-10/12 mx-auto py-20 ">
-            <section className="bg-[#F1EEFE]">
-            <h3 className="text-purple-900 text-center text-lg font-semibold">Testimonials</h3>
-      <h2 className="text-center text-3xl font-bold my-4">
-        Hear What Our Customers Have to Say
-      </h2>
 
+export default function App() {
+  const swiperRef = useRef(null);
 
-      <button className="swiper-button-prev  top-2 right-14 bg-white text-purple-600 shadow-lg rounded-full w-10 h-10 flex items-center justify-center hover:bg-purple-600 hover:text-white transition">
-          &#8592;
-        </button>
-        <button className="swiper-button-next  top-2 right-2 bg-purple-600 text-white shadow-lg rounded-full w-10 h-10 flex items-center justify-center hover:bg-purple-700 transition">
-          &#8594;
-        </button>
+  const goNext = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideNext();
+    }
+  };
 
-      <div className="relative max-w-3xl mx-auto">
-        <Swiper
-          navigation
-          modules={[Navigation]}
-          spaceBetween={30}
-          slidesPerView={1}
-          className="relative"
-        >
-          {/* Swiper Slide 1 */}
-          <SwiperSlide>
-            
-            <div className="bg-white shadow-lg p-5 rounded-lg">
-              <p className="text-gray-700 text-lg">
-                "CloudifyPro transformed our call centre operations. The Predictive Dialler
-                increased our outbound call efficiency significantly, and the Cloud Phone System
-                improved our overall communication flow. Plus, their support team is top-notch!"
-              </p>
-              <div className="flex items-center mt-4">
-                <img
-                  src="https://via.placeholder.com/50"
-                  alt="User"
-                  className="rounded-full w-12 h-12 mr-4"
-                />
-                <div>
-                  <h4 className="font-bold">Biplob Hossain</h4>
-                  <p className="text-gray-500 text-sm">CEO & Founder IT Tech</p>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
+  const goPrev = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slidePrev();
+    }
+  };
 
-          {/* Swiper Slide 2 */}
-          <SwiperSlide>
-            <div className="bg-white shadow-lg p-5 rounded-lg">
-              <p className="text-gray-700 text-lg">
-                "CloudifyPro truly revolutionized our business efficiency. Their features are
-                game-changing, and their support is excellent!"
-              </p>
-              <div className="flex items-center mt-4">
-                <img
-                  src="https://via.placeholder.com/50"
-                  alt="User"
-                  className="rounded-full w-12 h-12 mr-4"
-                />
-                <div>
-                  <h4 className="font-bold">Another Person</h4>
-                  <p className="text-gray-500 text-sm">Manager at Another Tech</p>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-        </Swiper>
+  return (
+    <div className='bg-[#F1EEFE] py-28'>
 
-        {/* Custom navigation buttons */}
-       
+    <div className="w-10/12 mx-auto"> {/* Center the content */}
+      <div className=' mx-auto  flex justify-between'>
+      <div>
+      <h1 className="text-2xl rounded-md font-medium text-[#8B71FB] border-2 border-[#8B71FB] w-fit py-2 px-8">
+           Testimonials
+          </h1>
+         <div className='w-fit '>
+         <h1 className="text-6xl font-bold mt-2 w-4/6 leading-tight">Hear What Our  Customers Have to Say</h1>
+         </div>
       </div>
-            </section>
-        </div>
-    );
-};
 
-export default Testimonial;
+
+      <div className="flex justify-center"> {/* Custom nav container */}
+        <button
+          onClick={goPrev}
+          className="bg-white w-fit h-fit hover:bg-[#6849f3] text-white font-bold py-6 px-6 rounded-full  mr-2"
+        >
+       <LuMoveLeft className='text-4xl text-black' />
+
+
+        </button>
+        <button
+          onClick={goNext}
+          className="bg-[#7051F3] w-fit h-fit hover:bg-[#6849f3] text-white font-bold py-6 px-6 rounded-full"
+        >
+        <MdOutlineArrowRightAlt  className='text-4xl'/>
+
+        </button>
+      </div>
+    </div>
+      <Swiper
+        ref={swiperRef}
+        modules={[Navigation]}
+        className="mySwiper"
+      >
+        {/* ... your SwiperSlides ... */}
+        <SwiperSlide>
+                <div className='grid grid-cols-6 gap-10 mt-16'>
+{/* Carousel First Card */}
+              <div className='col-span-4 border bg-[#E4DEFD] border-purple-500 rounded-md py-4 px-12'>
+              <h3 className="text-2xl leading-10 font-bold">
+              "CloudifyPro transformed our call centre operations. The Predictive Dialler increased our outbound call efficiency significantly, and the Cloud Phone System improved our overall communication flow. Plus, their support team is top-notch!"
+              </h3>
+             {/* First Card Second Item */}
+             <section className='flex justify-between items-start '>
+
+             <div className='flex gap-4 items-center justify-start mt-8'>
+               <div>
+               <img className='w-12 h-12 object-cover rounded-full' src={image} alt="" />
+               </div>
+                <div>
+                  <h1 className="text-xl font-bold mb-1">Abu Saleh Noor</h1>
+                  <p className="text-gray-700">CEO & Founder IT Tech </p>
+                </div>
+              </div>
+              <div>
+              <RiDoubleQuotesR className='text-9xl text-[#8C72FB]'/>
+              </div>
+             </section>
+               {/* First Card Second Item End */}
+
+              </div>
+              <div className='col-span-2 border bg-white py-4 px-6 rounded-md'>
+<p className="text-lg text-gray-500 font-semibold">
+"CloudifyPro transformed our call centre operations. The Predictive Dialler increased our outbound call efficiency significantly, and the Cloud Phone System improved our overall communication flow. Plus, their support team is top-notch!"
+</p>
+<section className='flex justify-between items-center mt-6'>
+
+             <div className='flex gap-4 items-center justify-start '>
+               <div>
+               <img className='w-12 h-12 object-cover rounded-full' src={image} alt="" />
+               </div>
+                <div>
+                  <h1 className="text-xl font-bold mb-1">Abu Saleh Noor</h1>
+                  <p className="text-gray-700">CEO & Founder IT Tech </p>
+                </div>
+              </div>
+              <div>
+              <RiDoubleQuotesR className='text-7xl text-[#8C72FB]'/>
+              </div>
+             </section>
+              </div>
+                </div>
+
+
+        </SwiperSlide>
+        <SwiperSlide>
+                <div className='grid grid-cols-6 gap-10 mt-16'>
+{/* Carousel First Card */}
+              <div className='col-span-4 border bg-[#E4DEFD] border-purple-500 rounded-md py-4 px-12'>
+              <h3 className="text-2xl leading-10 font-bold">
+              "CloudifyPro transformed our call centre operations. The Predictive Dialler increased our outbound call efficiency significantly, and the Cloud Phone System improved our overall communication flow. Plus, their support team is top-notch!"
+              </h3>
+             {/* First Card Second Item */}
+             <section className='flex justify-between items-start '>
+
+             <div className='flex gap-4 items-center justify-start mt-8'>
+               <div>
+               <img className='w-12 h-12 object-cover rounded-full' src={image} alt="" />
+               </div>
+                <div>
+                  <h1 className="text-xl font-bold mb-1">Abu Saleh Noor</h1>
+                  <p className="text-gray-700">CEO & Founder IT Tech </p>
+                </div>
+              </div>
+              <div>
+              <RiDoubleQuotesR className='text-9xl text-[#8C72FB]'/>
+              </div>
+             </section>
+               {/* First Card Second Item End */}
+
+              </div>
+              <div className='col-span-2 border bg-white py-4 px-6 rounded-md'>
+<p className="text-lg text-gray-500 font-semibold">
+"CloudifyPro transformed our call centre operations. The Predictive Dialler increased our outbound call efficiency significantly, and the Cloud Phone System improved our overall communication flow. Plus, their support team is top-notch!"
+</p>
+<section className='flex justify-between items-center mt-6'>
+
+             <div className='flex gap-4 items-center justify-start '>
+               <div>
+               <img className='w-12 h-12 object-cover rounded-full' src={image} alt="" />
+               </div>
+                <div>
+                  <h1 className="text-xl font-bold mb-1">Abu Saleh Noor</h1>
+                  <p className="text-gray-700">CEO & Founder IT Tech </p>
+                </div>
+              </div>
+              <div>
+              <RiDoubleQuotesR className='text-7xl text-[#8C72FB]'/>
+              </div>
+             </section>
+              </div>
+                </div>
+
+
+        </SwiperSlide>
+       
+       
+      </Swiper>
+    </div>
+    </div>
+  );
+}
