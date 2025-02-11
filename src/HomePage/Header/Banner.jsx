@@ -11,7 +11,7 @@ import image from '../../assets/Images/5c81b8f8-190c-4369-b2a8-188acfc11b11.jpeg
 const Banner = () => {
     return (
         <div className='bg-[#F1EEFE] '>
-            <div className='w-10/12 mx-auto py-16' >
+            <div className='md:w-10/12 mx-auto py-16' >
             {/*  */}
             <div className='lg:flex '>
             <div className=''>
@@ -46,7 +46,7 @@ const Banner = () => {
 
 
             </div>
-            <div className='grid gap-4 grid-cols-2 md:w-10/12 mt-8'>
+            <div className='grid md:gap-4 gap-2 grid-cols-2 md:w-10/12 mt-8'>
                <div className=''>
                <div className='border rounded-xl bg-white col-span-1  '>
                 <DonutChart></DonutChart>
@@ -54,45 +54,45 @@ const Banner = () => {
          
                </div>
                       {/*  */}
-                      <div className='col-span-1 border rounded-xl px-4 py-4 bg-white md:space-y-9 space-y-1' >
+                      <div className='col-span-1 border rounded-xl md:px-4 px-2 py-4 bg-white md:space-y-7 space-y-1' >
                  <div>
                  <div className='flex items-center gap-1 justify-between'>
-             <p className=' border bg-[#FFF5D9]  p-3 rounded-full'><RiFileCopy2Line className='text-[#FFC960] text-2xl' /></p>
+             <p className=' border bg-[#FFF5D9] p-1 md:p-3 rounded-full'><RiFileCopy2Line className='text-[#FFC960] text-2xl' /></p>
              <div>
-                <p className='text-md  font-bold'>Deposit from my Card</p>
-                <p className='text-slate-400  text-md font-bold'>28 Jan 2024</p>
+                <p className='md:text-lg text-sm  font-bold'>Deposit from my Card</p>
+                <p className='text-slate-400  md:text-lg text-sm font-bold'>28 Jan 2024</p>
              </div>
-             <p className='text-red-400 text-lg font-bold'>-$850</p>
+             <p className='text-red-400 md:text-lg text-sm font-bold'>-$850</p>
              </div>
                  </div>
                  <div>
                  <div className='flex items-center justify-between'>
-             <p className=' border bg-[#E7EdFF] p-3 rounded-full'><PiPaypalLogoDuotone className='text-blue-500 text-2xl' /></p>
+             <p className=' border bg-[#E7EdFF] p-1 md:p-3 rounded-full'><PiPaypalLogoDuotone className='text-blue-500 text-2xl' /></p>
              <div>
-                <p className='md:text-md text-sm font-bold'>Deposit from my Card</p>
-                <p className='text-slate-400 md:text-md text-sm font-bold'>28 Jan 2024</p>
+                <p className='md:text-lg text-sm font-bold'>Deposit from my Card</p>
+                <p className='text-slate-400 md:text-lg text-sm font-bold'>28 Jan 2024</p>
              </div>
-             <p className='text-[#4DD7AD] text-lg font-bold'>-$850</p>
+             <p className='text-[#4DD7AD] md:text-lg text-sm font-bold'>-$850</p>
              </div>
                  </div>
                  <div>
                  <div className='flex items-center justify-between'>
-             <p className=' border bg-[#E7EdFF] p-3 rounded-full'><PiPaypalLogoDuotone className='text-blue-500 text-2xl' /></p>
+             <p className=' border bg-[#E7EdFF] p-1 md:p-3 rounded-full'><PiPaypalLogoDuotone className='text-blue-500 text-2xl' /></p>
              <div>
-                <p className='text-md font-bold'>Deposit from my Card</p>
-                <p className='text-slate-400 font-bold'>28 Jan 2024</p>
+                <p className=' font-bold md:text-lg text-sm'>Deposit from my Card</p>
+                <p className='text-slate-400 md:text-lg text-sm font-bold'>28 Jan 2024</p>
              </div>
-             <p className='text-[#4DD7AD] text-lg font-bold'>-$850</p>
+             <p className='text-[#4DD7AD] md:text-lg text-sm font-bold'>-$850</p>
              </div>
                  </div>
                  <div>
                  <div className='flex items-center justify-between'>
-             <p className=' border bg-[#E7EdFF] p-3 rounded-full'><PiPaypalLogoDuotone className='text-blue-500 text-2xl' /></p>
+             <p className=' border bg-[#E7EdFF] p-1 md:p-3 rounded-full'><PiPaypalLogoDuotone className='text-blue-500 text-2xl' /></p>
              <div>
-                <p className='text-md font-bold'>Deposit from my Card</p>
-                <p className='text-slate-400 font-bold'>28 Jan 2024</p>
+                <p className='md:text-lg text-sm font-bold'>Deposit from my Card</p>
+                <p className='text-slate-400 md:text-lg text-sm font-bold'>28 Jan 2024</p>
              </div>
-             <p className='text-[#4DD7AD] text-lg font-bold'>-$850</p>
+             <p className='text-[#4DD7AD] md:text-lg text-sm font-bold'>-$850</p>
              </div>
                  </div>
                 

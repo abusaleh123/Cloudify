@@ -30,7 +30,7 @@ const renderCustomLabel = () => {
 
 const DonutChart = () => {
   return (
-    <div className='py-6 px-4'> 
+    <div className='py-6 px-2 md:px-4'> 
 
     <div className='flex'>
         <p className='font-medium'>Analytics</p>
@@ -57,7 +57,7 @@ const DonutChart = () => {
       </PieChart>
     
     </ResponsiveContainer>
-    <div className='flex justify-between px-3'>
+    <div className='flex text-sm md:text-lg md:justify-between md:px-3'>
       <div className='flex gap-1 items-center'>
       <p className=" w-3 h-3 bg-[#7051F3] rounded-sm"></p>
       <p>Sale</p>
