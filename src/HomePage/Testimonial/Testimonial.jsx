@@ -31,13 +31,15 @@ export default function App() {
     <div className='bg-[#F1EEFE] py-28'>
 
     <div className="w-10/12 mx-auto"> {/* Center the content */}
-      <div className=' mx-auto  flex justify-between'>
-      <div>
-      <h1 className="text-2xl rounded-md font-medium text-[#8B71FB] border-2 border-[#8B71FB] w-fit py-2 px-8">
+      <div className=' mx-auto  flex flex-col md:flex-row justify-between'>
+      <div className='text-center md:text-start'>
+      <div className='flex justify-center md:justify-start'>
+      <h1 className="text-2xl  rounded-md font-medium text-[#8B71FB] border-2 border-[#8B71FB] w-fit py-2 px-8">
            Testimonials
           </h1>
-         <div className='w-fit '>
-         <h1 className="text-6xl font-bold mt-2 w-4/6 leading-tight">Hear What Our  Customers Have to Say</h1>
+      </div>
+         <div className='w-fit flex justify-center md:justify-start mb-4 md:mb-0'>
+         <h1 className="text-4xl md:text-6xl  font-bold mt-2 w-4/6 leading-tight">Hear What Our  Customers Have to Say</h1>
          </div>
       </div>
 
@@ -69,7 +71,7 @@ export default function App() {
         <SwiperSlide>
                 <div className='grid grid-cols-6 gap-10 mt-16'>
 {/* Carousel First Card */}
-              <div className='col-span-4 border bg-[#E4DEFD] border-purple-500 rounded-md py-4 px-12'>
+              <div className='md:col-span-4 col-span-6 border bg-[#E4DEFD] border-purple-500 rounded-md py-4 px-12'>
               <h3 className="text-2xl leading-10 font-bold">
               "CloudifyPro transformed our call centre operations. The Predictive Dialler increased our outbound call efficiency significantly, and the Cloud Phone System improved our overall communication flow. Plus, their support team is top-notch!"
               </h3>
@@ -92,7 +94,7 @@ export default function App() {
                {/* First Card Second Item End */}
 
               </div>
-              <div className='col-span-2 border bg-white py-4 px-6 rounded-md'>
+              <div className='md:col-span-2 col-span-6 border bg-white py-4 px-6 rounded-md'>
 <p className="text-lg text-gray-500 font-semibold">
 "CloudifyPro transformed our call centre operations. The Predictive Dialler increased our outbound call efficiency significantly, and the Cloud Phone System improved our overall communication flow. Plus, their support team is top-notch!"
 </p>
@@ -119,7 +121,7 @@ export default function App() {
         <SwiperSlide>
                 <div className='grid grid-cols-6 gap-10 mt-16'>
 {/* Carousel First Card */}
-              <div className='col-span-4 border bg-[#E4DEFD] border-purple-500 rounded-md py-4 px-12'>
+              <div className='md:col-span-4 col-span-6 border bg-[#E4DEFD] border-purple-500 rounded-md py-4 px-12'>
               <h3 className="text-2xl leading-10 font-bold">
               "CloudifyPro transformed our call centre operations. The Predictive Dialler increased our outbound call efficiency significantly, and the Cloud Phone System improved our overall communication flow. Plus, their support team is top-notch!"
               </h3>
@@ -142,7 +144,7 @@ export default function App() {
                {/* First Card Second Item End */}
 
               </div>
-              <div className='col-span-2 border bg-white py-4 px-6 rounded-md'>
+              <div className='md:col-span-2 col-span-6 border bg-white py-4 px-6 rounded-md'>
 <p className="text-lg text-gray-500 font-semibold">
 "CloudifyPro transformed our call centre operations. The Predictive Dialler increased our outbound call efficiency significantly, and the Cloud Phone System improved our overall communication flow. Plus, their support team is top-notch!"
 </p>
